@@ -1,0 +1,307 @@
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0;
+    font-size: 16px; 
+    font-style: normal; 
+    font-weight: 400;
+}
+
+#navigation-bar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid gainsboro;
+}
+
+#navigation-bar div{
+    margin: 20px;
+}
+
+#menu > span{
+    margin: 0;
+    padding: 8px 20px;
+    border: solid black 1px;
+}
+
+#menu span a{
+    text-decoration: none;
+    color: black;
+}
+
+#menu span:first-child{
+    border-radius: 5px 0px 0px 5px;
+}
+
+#menu span:last-child{
+    border-radius: 0px 5px 5px 0px;
+}
+
+section > div:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+section > div:first-child > h1{
+    font-size: 28px;
+    font-weight: 700; 
+    width: 500px;
+}
+
+section > div:first-child p{
+    color: rgb(121, 141, 163);
+    margin: 0;
+}
+
+section:nth-of-type(2) > div:first-child{
+    background-color: rgb(237, 240, 244);
+    height: 180px;
+}
+
+#content{
+    display: grid;
+    grid-template-columns: 410px 310px;
+    gap: 0px 25px;
+    justify-content: center;
+    margin: 50px;
+}
+
+#feeds{
+    grid-column: 1;
+    width: 410px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+p{
+    color: rgb(121, 141, 163);
+}
+
+#feeds > p{
+    width: 335px;
+    margin: auto;
+    padding: 18px;
+}
+
+.avatar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 335px;
+    margin: auto;
+    padding: 18px;
+}
+
+.avatar svg{
+    margin: auto;
+}
+
+.avatar > span:first-child{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+}
+
+.avatar > span{
+    text-align: left;
+}
+
+.avatar span h4, .avatar span p{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+li > span:first-child{
+    display: flex;
+    align-items: center;
+}
+
+.border-grey{
+    background-color: rgb(237, 240, 244);
+    border-radius: 100px;
+}
+
+li > span > p{
+    padding: 10px 15px;
+    text-align: left;
+}
+
+
+
+#contact{
+    grid-column: 2;
+    background-color: rgb(237, 240, 244);
+    border-radius: 10px;
+    width: 310px;
+}
+
+#more{
+    grid-row: 2;
+    grid-column: 1;
+    width: 410px;
+}
+
+#contact > div:first-child{
+    max-width: 240px;
+    margin: auto;
+}
+
+#contact > div:first-child > p{
+    font-size: small;
+    color: rgb(121, 141, 163);
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 240px; /* Adjust the width as needed */
+    margin: auto;
+}
+
+#contact-form div {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Adjust label color */
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 14px 60px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+
+#packages{
+    display: grid;
+}
+
+#packages > span{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    width: 100%;
+    gap: 20px;
+}
+
+#packages > span > span:first-child{
+    padding: 10px 15px;
+    margin: 20px;
+}
+
+#packages > span:nth-child(1), #packages > span:nth-child(4){
+    grid-column: 1;
+    width: 310px;
+}
+
+#packages > span:nth-child(2), #packages > span:nth-child(5){
+    grid-column: 2;
+    width: 310px;
+}
+
+#packages > span:nth-child(3), #packages > span:nth-child(6){
+    grid-column: 3;
+    width: 310px;
+}
+
+
+
+#call-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    gap: 20px;
+}
+
+#call-section div{
+    margin: 0;
+}
+
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid gainsboro;
+}
+
+footer div{
+    display: flex;
+}
+
+
+@media only screen and (max-width: 1000px){
+    #packages{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #packages > span{
+        width: 100%;
+    }
+
+    #packages > span:nth-child(1), #packages > span:nth-child(4), #packages > span:nth-child(2), #packages > span:nth-child(5), #packages > span:nth-child(3), #packages > span:nth-child(6){
+        width: 310px;
+    }
+
+    #content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 50px;
+    }
+}
