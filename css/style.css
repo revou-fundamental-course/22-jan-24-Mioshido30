@@ -281,6 +281,14 @@ footer div{
     display: flex;
 }
 
+.hide{
+    display: none;
+}
+
+.slide{
+    width: 410px;
+    height: 309px;
+}
 
 @media only screen and (max-width: 1000px){
     #packages{

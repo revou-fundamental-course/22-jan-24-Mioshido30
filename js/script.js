@@ -27,3 +27,36 @@ function validate(e){
     alert("Thank you for your interest. We will get back to you soon.");
 
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll('.slide');
+    const links = document.querySelectorAll('.menu > span > a');
+
+    let currentSlide = 0;
+
+    setInterval(() => {
+        slides[currentSlide].classList.add('hide');
+        currentSlide++;
+        if (currentSlide >= slides.length) {
+            currentSlide = 0;
+        }
+        slides[currentSlide].classList.remove('hide');
+
+    }, 2000);
+
+
+    links.forEach(link => {
+        link.addEventListener('click', scrollToSection);
+    });
+
+    function scrollToSection(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        targetSection.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+});
